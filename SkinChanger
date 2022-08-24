@@ -1,0 +1,331 @@
+--More info at lux#2214 [Discord]
+--Hope you enjoy having CB:RO skins! [Animated are little buggy]
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Client = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local allSkins = {
+   {'Saccharine Saboteur_Stock'},
+   {'CodolKnife_Stock'},
+   {'Skadi Daggers_Stock'},
+   {'MoaiSpeed_Stock'},
+   {'EtherealBlade_Stock'},
+   {'SCAR-20_Mahogany'},
+   {'SCAR-20_Holly Bound'},
+   {'SCAR-20_Hex'},
+   {'SCAR-20_Foliage'},
+   {'SCAR-20_Autumn'},
+   {'SCAR-20_Amethyst'},
+   {'AK47_Hallows'},
+   {'SCAR-20_Stock'},
+   {'ButterflyDevil_Stock'},
+   {'BayonetClassic_Kuro to shiro'},
+   {'BayonetClassic_Fluorescent'},
+   {'BayonetClassic_Candy Cane'},
+   {'BayonetClassic_Crow'},
+   {'BayonetClassic_Easy-Bake'},
+   {'BayonetClassic_Frozen Dream'},
+   {'BayonetClassic_Sapphire'},
+   {'BayonetClassic_Intertwine'},
+   {'BayonetClassic_Naval'},
+   {'BayonetClassic_Twitch'},
+   {'BayonetClassic_Wetland'},
+   {'BayonetClassic_Geo Blade'},
+   {'BayonetClassic_Marbleized'},
+   {'BayonetClassic_Hallows'},
+   {'BayonetClassic_Splattered'},
+   {'BayonetClassic_Stock'},
+   {'ButterflyGod_Stock'},
+   {'HandwrapsGold_Stock'},
+   {'Pillow_Cute'},
+   {'Classic Knife_Future'},
+   {'Classic Knife_Stock'},
+   {'Moai_God'},
+   {'ClownHammer_Circus'},
+   {'Darkheart_Tiredness'},
+   {'RedReaver_Stock'},
+   {'KarambitReaver_Stock'},
+   {'ShadowDaggers_Weeb'},
+   {'ShadowDaggers_Fade'},
+   {'AK47_Ace of Spades'},
+   {'AK47_Neogenesis'},
+   {'AK47_Roqa'},
+   {'AK47_Mummy'},
+   {'AK47_Hallows 2'},
+   {'AK47_Goo'},
+   {'AK47_Sakura'},
+   {'AK47_Plated'},
+   {'AK47_Halo'},
+   {'AK47_Crimson'},
+   {'AK47_Neon Astrology'},
+   {'AK47_Raven'},
+   {'AK47_Boo Skin'},
+   {'AK47_Nikitos Games Donator'},
+   {'AK47_mSey'},
+   {'AK47_True King'},
+   {'AK47_Jester'},
+   {'AK47_Inversion'},
+   {'AK47_Clowny'},
+   {'AK47_Yltude'},
+   {'AK47_Starkov Remake'},
+   {'AK47_Glitter'},
+   {'AK47_Nikitos Games Subscriber'},
+   {'AK47_God Eater'},
+   {'AK47_Glitch'},
+   {'AK47_N4Line'},
+   {'AK47_Dark Dragon King'},
+   {'AK47_Dragon King'},
+   {'AK47_Lantern'},
+   {'AK47_Toxc Nitro'},
+   {'AK47_CAME SOSAL'},
+   {'AK47_Nikitos Games'},
+   {'AK47_Quicktime'},
+   {'AK47_Mxlu3'},
+   {'AK47_Million Visits'},
+   {'AK47_Ace'},
+   {'AK47_Aquamarine Revenge'},
+   {'AK47_Glo2'},
+   {'AK47_Weeb'},
+   {'AK47_Cat'},
+   {'AK47_EVOLVe Committee'},
+   {'AK47_Mxlu2'},
+   {'AK47_Mxlu'},
+   {'AK47_Starkov'},
+   {'AK47_Nightmare'},
+   {'AK47_BloxFun'},
+   {'AK47_Kenzie'},
+   {'AK47_Prototype'},
+   {'AK47_White 1648'},
+   {'AK47_Neonline'},
+   {'AK47_Galaxy Corpse'},
+   {'AK47_Scythe'},
+   {'XM_Stock'},
+   {'XM_Red'},
+   {'XM_Spectrum'},
+   {'XM_Artic'},
+   {'XM_Atomic'},
+   {'XM_Campfire'},
+   {'XM_Predator'},
+   {'XM_MK11'},
+   {'XM_Endless Night'},
+   {'USP_Stock'},
+   {'USP_Hopeless'},
+   {'USP_Jade Dream'},
+   {'USP_Yellowbelly'},
+   {'USP_Skull'},
+   {'USP_Crimson'},
+   {'USP_Racing'},
+   {'USP_Frostbite'},
+   {'USP_Nighttown'},
+   {'USP_Paradise'},
+   {'USP_Dizzy'},
+   {'USP_Kraken'},
+   {'USP_Worlds Away'},
+   {'USP_Unseen'},
+   {'USP_Holiday'},
+   {'USP_Survivor'},
+   {'USP_White 1648'},
+   {'USP_Nikitos Games'},
+   {'USP_Fluorescent'},
+   {'USP_Aesthetic'},
+   {'USP_Graffitis'},
+   {'USP_Disco Tech'},
+   {'USP_Nerf'},
+   {'USP_Enchroma'},
+   {'Banana_Yellow'},
+   {'Banana_Stock'},
+   {'Banana_Purple'},
+   {'Banana_Red'},
+   {'Banana_Banner'},
+   {'UMP_Stock'},
+   {'UMP_Militia Camo'},
+   {'UMP_Magma'},
+   {'UMP_Redline'},
+   {'UMP_Death Grip'},
+   {'UMP_Molten'},
+   {'UMP_Gum Drop'},
+   {'UMP_Orbit'},
+   {'SG_Stock'},
+   {'SG_Variant Camo'},
+   {'SG_Yltude'},
+   {'SG_Knighthood'},
+   {'SG_Magma'},
+   {'SG_Dummy'},
+   {'SG_DropX'},
+   {'SG_Kitty Cat'},
+   {'SG_Drop Out'},
+   {'SG_Control'},
+   {'SG_Fluorescent'},
+   {'SG_Fade 24'},
+   {'SG_King'},
+   {'SG_Cat'},
+   {'Scout_Stock'},
+   {'Scout_Flowing Mists'},
+   {'Scout_Xmas'},
+   {'Scout_Railgun'},
+   {'Scout_Hellborn'},
+   {'Scout_Hot Cocoa'},
+   {'Scout_Theory'},
+   {'Scout_Pulse'},
+   {'Scout_Monstruo'},
+   {'Scout_Coffin Biter'},
+   {'Scout_Neon Regulation'},
+   {'Scout_Posh'},
+   {'Scout_Darkness'},
+   {'Scout_RevTree'},
+   {'Scout_Vaporwave'},
+   {'Scar_Stock'},
+   {'Scar_Amethyst'},
+   {'Scar_Autumn'},
+   {'Scar_Hex'},
+   {'Scar_Holly Bound'},
+   {'Scar_Mahogany'},
+   {'SawedOff_Stock'},
+   {'SawedOff_Colorboom'},
+   {'SawedOff_Spooky'},
+   {'SawedOff_Opal'},
+   {'SawedOff_Casino'},
+   {'SawedOff_Executioner'},
+   {'SawedOff_Sullys Blacklight'},
+   {'Bizon_Stock'},
+   {'Bizon_Festive'},
+   {'Bizon_Shattered'},
+   {'Bizon_Oblivion'},
+   {'Bizon_Sergeant'},
+   {'Bizon_Saint Nick'},
+   {'Bizon_Autumic'},
+   {'P2000_Stock'},
+   {'P2000_Golden Age'},
+   {'P2000_Apathy'},
+   {'P2000_Comet'},
+   {'P2000_Candycorn'},
+   {'P2000_Lunar'},
+   {'P2000_Ruby'},
+   {'P2000_Camo Dipped'},
+   {'P2000_Dark Beast'},
+   {'P2000_Pinkie'},
+   {'P2000_Silence'},
+   {'P2000_Nightmare'},
+   {'P2000_Cat'},
+   {'P2000_Roses'},
+   {'P250_Stock'},
+   {'P250_Amber'},
+   {'P250_TC250'},
+   {'P250_Bomber'},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+   {''},
+ }
+
+local isUnlocked
+
+local mt = getrawmetatable(game)
+local oldNamecall = mt.__namecall
+setreadonly(mt, false)
+
+local isUnlocked
+
+mt.__namecall = newcclosure(function(self, ...)
+   local args = {...}
+   if getnamecallmethod() == "InvokeServer" and tostring(self) == "Hugh" then
+       return
+   end
+   if getnamecallmethod() == "FireServer" then
+       if args[1] == LocalPlayer.UserId then
+           return
+       end
+       if string.len(tostring(self)) == 38 then
+           if not isUnlocked then
+               isUnlocked = true
+               for i,v in pairs(allSkins) do
+                   local doSkip
+                   for i2,v2 in pairs(args[1]) do
+                       if v[1] == v2[1] then
+                           doSkip = true
+                       end
+                   end
+                   if not doSkip then
+                       table.insert(args[1], v)
+                   end
+               end
+           end
+           return
+       end
+       if tostring(self) == "DataEvent" and args[1][4] then
+           local currentSkin = string.split(args[1][4][1], "_")[2]
+           if args[1][2] == "Both" then
+               LocalPlayer["SkinFolder"]["CTFolder"][args[1][3]].Value = currentSkin
+               LocalPlayer["SkinFolder"]["TFolder"][args[1][3]].Value = currentSkin
+           else
+               LocalPlayer["SkinFolder"][args[1][2] .. "Folder"][args[1][3]].Value = currentSkin
+           end
+       end
+   end
+   return oldNamecall(self, ...)
+end)
+   
+setreadonly(mt, true)
+
+Client.CurrentInventory = allSkins
+
+local TClone, CTClone = LocalPlayer.SkinFolder.TFolder:Clone(), game.Players.LocalPlayer.SkinFolder.CTFolder:Clone()
+LocalPlayer.SkinFolder.TFolder:Destroy()
+LocalPlayer.SkinFolder.CTFolder:Destroy()
+TClone.Parent = LocalPlayer.SkinFolder
+CTClone.Parent = LocalPlayer.SkinFolder
