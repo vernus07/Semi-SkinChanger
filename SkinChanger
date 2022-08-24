@@ -1,5 +1,3 @@
---More info at lux#2214 [Discord]
---Hope you enjoy having CB:RO skins! [Animated are little buggy]
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Client = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
