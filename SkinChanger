@@ -64,6 +64,7 @@ local allSkins = {
    {'AK47_True King'},
    {'AK47_Jester'},
    {'AK47_Inversion'},
+   {'AK47_Code Orange'},
    {'AK47_Clowny'},
    {'AK47_Yltude'},
    {'AK47_Starkov Remake'},
@@ -773,6 +774,19 @@ local allSkins = {
    {'Huntsman Knife_Dragon King'},
    {'Huntsman Knife_Kuro to shiro'},
    {'Huntsman Knife_Weeb'},
+   {'Tec9_Stock'},
+   {'Tec9_Charger'},
+   {'Tec9_Ironline'},
+   {'Tec9_Skintech'},
+   {'Tec9_Stocking Stuffer'},
+   {'Tec9_Samurai'},
+   {'Tec9_Phol'},
+   {'Tec9_Gift Wrapped'},
+   {'Tec9_Performer'},
+   {'Tec9_Seasoned'},
+   {'Tec9_Roses'},
+   {'BlackReaver_Stock'},
+   {'Illumina_Princess'},
  }
 
 local isUnlocked
