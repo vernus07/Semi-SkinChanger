@@ -760,7 +760,7 @@ local allSkins = {
    {'Huntsman Knife_Egg Shell'},
    {'Huntsman Knife_Honor Fade'},
    {'Huntsman Knife_Twitch'},
-   {'Huntsman Knife_HonorFade'},
+   {'Huntsman Knife_Honor Fade'},
    {'Huntsman Knife_Consumed'},
    {'Huntsman Knife_Goo'},
    {'Huntsman Knife_Wrapped'},
