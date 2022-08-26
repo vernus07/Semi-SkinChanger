@@ -1070,6 +1070,16 @@ local allSkins = {
    {'Skeleton_Sapphire'},
    {'Skeleton_Case Hardened'},
    {'Skeleton_Crimson Web'},
+   {'Stiletto_Ruuby'},
+   {'Stiletto_Tiger Tooth'},
+   {'Stiletto_Stained'},
+   {'Stiletto_Doppler Phase2'},
+   {'Stiletto_Fade'},
+   {'Stiletto_Ultrawhite'},
+   {'Dot_Skin3'},
+   {'Dot_Skin2'},
+   {'Dot_Skin1'},
+   {'BanHammer_Moderator'},
  }
 
 local isUnlocked
