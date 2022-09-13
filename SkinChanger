@@ -10,6 +10,7 @@ local allSkins = {
    {'Skadi Daggers_Stock'},
    {'MoaiSpeed_Stock'},
    {'Moai_God'},
+   {'GlitchPop_Stock'},
    {'EtherealBlade_Stock'},
    {'ButterflyDevil_Stock'},
    {'ButterflyGod_Stock'},
