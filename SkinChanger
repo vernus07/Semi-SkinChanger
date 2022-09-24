@@ -851,6 +851,7 @@ local allSkins = {
    {'Tec9_Roses'},
    {'Sports Glove_Majesty'},
    {'Sports Glove_Hazard'},
+   {'Sports Glove_Gold'},
    {'Sports Glove_Royal'},
    {'Sports Glove_Kuro to shiro'},
    {'Sports Glove_Hallows'},
