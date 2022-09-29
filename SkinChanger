@@ -190,6 +190,7 @@ local allSkins = {
    {'AK47_Neonline'},
    {'AK47_Galaxy Corpse'},
    {'AK47_Scythe'},
+   {'AK47_Eli'},
    {'AK47_Bloodboom'},
    {'AK47_Redline'},
    {'AK47_Chromatic Aberration'},
