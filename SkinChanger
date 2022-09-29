@@ -16,6 +16,11 @@ local allSkins = {
    {'Dot_Skin3'},
    {'Dot_Skin2'},
    {'Dot_Skin1'},
+   {'BananaDev_Yellow'},
+   {'BananaDev_Stock'},
+   {'BananaDev_Purple'},
+   {'BananaDev_Red'},
+   {'BananaDev_Banner'},
    {'Illumina_Princess'},
    {'Darkheart_Tiredness'},
    {'FishKnife_Mackerel'},
@@ -1170,11 +1175,6 @@ local allSkins = {
    {'Stiletto_Doppler Phase 2'},
    {'Stiletto_Fade'},
    {'Stiletto_Ultrawhite'},
-   {'BananaDev_Yellow'},
-   {'BananaDev_Stock'},
-   {'BananaDev_Purple'},
-   {'BananaDev_Red'},
-   {'BananaDev_Banner'},
  }
 
 local isUnlocked
