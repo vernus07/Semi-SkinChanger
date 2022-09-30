@@ -9,6 +9,7 @@ local allSkins = {
    {'Saccharine Saboteur_Stock'},
    {'CodolKnife_Stock'},
    {'FalchionPrivate_Late Night'},
+   {'FalchionPrivate_Autotronic'},
    {'HomerSimpson_Stock'},
    {'Skadi Daggers_Stock'},
    {'EtherealBlade_Stock'},
