@@ -1,7 +1,7 @@
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Client = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
+ 
 local allSkins = {
    {'GlitchPop_Stock'},
    {'MoaiSpeed_Stock'},
@@ -1224,16 +1224,16 @@ local allSkins = {
    {'Stiletto_Doppler Phase 2'},
    {'Stiletto_Fade'},
    {'Stiletto_Ultrawhite'},
- }
-
+}
+ 
 local isUnlocked
-
+ 
 local mt = getrawmetatable(game)
 local oldNamecall = mt.__namecall
 setreadonly(mt, false)
-
+ 
 local isUnlocked
-
+ 
 mt.__namecall = newcclosure(function(self, ...)
    local args = {...}
    if getnamecallmethod() == "InvokeServer" and tostring(self) == "Hugh" then
@@ -1274,9 +1274,9 @@ mt.__namecall = newcclosure(function(self, ...)
 end)
    
 setreadonly(mt, true)
-
+ 
 Client.CurrentInventory = allSkins
-
+ 
 local TClone, CTClone = LocalPlayer.SkinFolder.TFolder:Clone(), game.Players.LocalPlayer.SkinFolder.CTFolder:Clone()
 LocalPlayer.SkinFolder.TFolder:Destroy()
 LocalPlayer.SkinFolder.CTFolder:Destroy()
