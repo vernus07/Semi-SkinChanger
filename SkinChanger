@@ -1,7 +1,7 @@
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Client = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
- 
+
 local allSkins = {
    {'GlitchPop_Stock'},
    {'MoaiSpeed_Stock'},
@@ -215,7 +215,6 @@ local allSkins = {
    {'AK47_Gold Abaresque'},
    {'AK47_GraffStyle'},
    {'AK47_Bloodmoon'},
-   {'AK47_Dinque'},
    {'XM_Stock'},
    {'XM_Red'},
    {'XM_Spectrum'},
@@ -252,7 +251,6 @@ local allSkins = {
    {'USP_Cortex'},
    {'USP_Hopeless'},
    {'USP_Ace of Spades'},
-   {'USP_Dinque'},
    {'Banana_Yellow'},
    {'Banana_Stock'},
    {'Banana_Purple'},
@@ -297,7 +295,6 @@ local allSkins = {
    {'Scout_Darkness'},
    {'Scout_RevTree'},
    {'Scout_Vaporwave'},
-   {'Scout_Dinque'},
    {'Scar_Stock'},
    {'Scar_Amethyst'},
    {'Scar_Autumn'},
@@ -452,7 +449,6 @@ local allSkins = {
    {'M4A4_MFTS'},
    {'M4A4_Cute Bunny'},
    {'M4A4_danny123d'},
-   {'M4A4_Dinque'},
    {'M4A1_Stock'},
    {'M4A1_Desert Camo'},
    {'M4A1_Toucan'},
@@ -500,7 +496,6 @@ local allSkins = {
    {'Glock_Space Cats'},
    {'Glock_Racer'},
    {'Glock_danny123d'},
-   {'Glock_Dinque'},
    {'Galil_Stock'},
    {'Galil_Hardware'},
    {'Galil_Toxicity'},
@@ -624,7 +619,6 @@ local allSkins = {
    {'DesertEagle_Engram'},
    {'DesertEagle_Racer Remake'},
    {'DesertEagle_Moonstyle'},
-   {'DesertEagle_Dinque'},
    {'CZ_Stock'},
    {'CZ_Festive'},
    {'CZ_Lightning'},
@@ -709,9 +703,6 @@ local allSkins = {
    {'AWP_Redline'},
    {'AWP_Asiimov'},
    {'AWP_danny123d'},
-   {'AWP_Chromatic Aberration'},
-   {'AWP_BloxFun'},
-   {'AWP_Dinque'},
    {'AUG_Stock'},
    {'AUG_Dream Hound'},
    {'AUG_Phoenix'},
@@ -803,7 +794,6 @@ local allSkins = {
    {'Butterfly Knife_RSL'},
    {'Butterfly Knife_Chromatic'},
    {'Butterfly Knife_Gold'},
-   {'Butterfly Knife_Dinque'},
    {'RealButterfly_Bloodwidow'},
    {'RealButterfly_Freedom'},
    {'RealButterfly_Crippled Fade'},
@@ -953,7 +943,6 @@ local allSkins = {
    {'Sports Glove_Ace of Spades'},
    {'Sports Glove_Berserk'},
    {'Sports Glove_Tudaego'},
-   {'Sports Glove_Sports Dinque'},
    {'Strapped Glove_Grim'},
    {'Strapped Glove_Molten'},
    {'Strapped Glove_Wisk'},
@@ -999,7 +988,6 @@ local allSkins = {
    {'Handwraps_Hallows 3'},
    {'Handwraps_Temperature of Hexagons'},
    {'Handwraps_Otherworldly'},
-   {'Handwraps_Wraps Dinque'},
    {'Karambit_Stock'},
    {'Karambit_Bloodwidow'},
    {'Karambit_Crippled Fade'},
@@ -1058,7 +1046,6 @@ local allSkins = {
    {'Karambit_Chromatic'},
    {'Karambit_RSL'},
    {'Karambit_America'},
-   {'Karambit_Dinque'},
    {'Karambit_Late Night'},
    {'Karambit_Brilliantly'},
    {'KarambitKnife_Stock'},
@@ -1217,23 +1204,22 @@ local allSkins = {
    {'Skeleton_Stained'},
    {'Skeleton_Scorched'},
    {'Skeleton_Slaughter'},
-   {'Skeleton_Dinque'},
    {'Stiletto_Ruby'},
    {'Stiletto_Tiger Tooth'},
    {'Stiletto_Stained'},
    {'Stiletto_Doppler Phase 2'},
    {'Stiletto_Fade'},
    {'Stiletto_Ultrawhite'},
-}
- 
+ }
+
 local isUnlocked
- 
+
 local mt = getrawmetatable(game)
 local oldNamecall = mt.__namecall
 setreadonly(mt, false)
- 
+
 local isUnlocked
- 
+
 mt.__namecall = newcclosure(function(self, ...)
    local args = {...}
    if getnamecallmethod() == "InvokeServer" and tostring(self) == "Hugh" then
@@ -1274,9 +1260,9 @@ mt.__namecall = newcclosure(function(self, ...)
 end)
    
 setreadonly(mt, true)
- 
+
 Client.CurrentInventory = allSkins
- 
+
 local TClone, CTClone = LocalPlayer.SkinFolder.TFolder:Clone(), game.Players.LocalPlayer.SkinFolder.CTFolder:Clone()
 LocalPlayer.SkinFolder.TFolder:Destroy()
 LocalPlayer.SkinFolder.CTFolder:Destroy()
