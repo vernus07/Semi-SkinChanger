@@ -865,6 +865,7 @@ local allSkins = {
    {'Gut Knife_Goo'},
    {'Gut Knife_Wrapped'},
    {'Gut Knife_Holly'},
+   {'Gut Knife_Slice'},
    {'Huntsman Knife_Stock'},
    {'Huntsman Knife_Splattered'},
    {'Huntsman Knife_Geo Blade'},
