@@ -214,8 +214,6 @@ local allSkins = {
    {'AK47_Tudaego'},
    {'AK47_Dragon of Rust'},
    {'AK47_Gold Abaresque'},
-   {'AK47_GraffStyle'},
-   {'AK47_Bloodmoon'},
    {'AK47_Dinque'},
    {'XM_Stock'},
    {'XM_Red'},
