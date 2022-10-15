@@ -4,6 +4,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local allSkins = {
    {'GlitchPop_Stock'},
+   {'Handcannon_Stock'},
    {'MoaiSpeed_Stock'},
    {'HandwrapsGold_WrapsGold'},
    {'Saccharine Saboteur_Stock'},
