@@ -730,6 +730,7 @@ local allSkins = {
    {'AWP_Grave'},
    {'AWP_Jibz'},
    {'AWP_CowZatFate'},
+   {'AWP_Racer'},
    {'AUG_Stock'},
    {'AUG_Dream Hound'},
    {'AUG_Phoenix'},
