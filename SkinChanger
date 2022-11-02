@@ -37,6 +37,8 @@ local allSkins = {
    {'KarambitReaver_Stock'},
    {'WhiteReaver_Stock'},
    {'BlackReaver_Stock'},
+   {'BloxyCola_Stock'},
+   {'Crewmate_Stock'},
    {'BayonetClassic_Stock'},
    {'BayonetClassic_Kuro to shiro'},
    {'BayonetClassic_Fluorescent'},
