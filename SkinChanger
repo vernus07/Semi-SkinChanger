@@ -40,7 +40,7 @@ local allSkins = {
    {'BloxyCola_Stock'},
    {'Crewmate_Stock'},
    {'KukriBeast_Stock'},
-   {'CDualEnergyBlades_Stock'},
+   {'DualEnergyBlades_Stock'},
    {'BayonetClassic_Stock'},
    {'BayonetClassic_Kuro to shiro'},
    {'BayonetClassic_Fluorescent'},
