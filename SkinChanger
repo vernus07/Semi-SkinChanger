@@ -646,6 +646,8 @@ local allSkins = {
    {'DesertEagle_CowZatFate'},
    {'DesertEagle_Jibz'},
    {'DesertEagle_Isla 2'},
+   {'DesertEagle_Kipper'},
+   {'DesertEagle_BlazeIBP'},
    {'CZ_Stock'},
    {'CZ_Festive'},
    {'CZ_Lightning'},
