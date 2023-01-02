@@ -6,6 +6,7 @@ local allSkins = {
    {'GlitchPop_Stock'},
    {'MoaiSpeed_Stock'},
    {'HandwrapsGold_WrapsGold'},
+   {'FingerlessCrystal_CrystalFingerless'},
    {'Saccharine Saboteur_Stock'},
    {'CodolKnife_Stock'},
    {'FalchionPrivate_Late Night'},
